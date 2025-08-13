@@ -1,1 +1,22 @@
 scons platform=windows target=template_debug debug_symbols=yes
+
+
+
+我正在制作一个编程游戏, 因此需要玩家输入大量的代码并动态解析. 我已经完成了基本功能, 
+但是游戏内的报错我无法用ggscript获取到, 因为脚本编译的错误是一个枚举, 信息太少
+
+	# 重新加载脚本（检查是否有编译错误）
+	var reload_err: Error = script.reload()
+	if reload_err != OK:
+		var err_text := error_string(reload_err)
+		var parts := []
+		parts.append("编译失败：%s (错误码=%s)" % [err_text, str(reload_err)])
+		output.text = "\n".join(parts)
+		return
+	else:
+		print("代码编译成功")
+
+
+所以我希望把godot输出给控制台的信息获取到, 以便做更详细的教学内容
+有什么办法获得吗, 或者有其他方案来达到检测代码错误内容和行号的办法?
+

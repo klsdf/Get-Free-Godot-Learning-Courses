@@ -1,0 +1,8 @@
+G:/creation/godot-cpp-template/out/build/x64-Debug/CMakeFiles/EXTENSION-NAME.dir
+G:/creation/godot-cpp-template/out/build/x64-Debug/CMakeFiles/generate_doc_source.dir
+G:/creation/godot-cpp-template/out/build/x64-Debug/CMakeFiles/edit_cache.dir
+G:/creation/godot-cpp-template/out/build/x64-Debug/CMakeFiles/rebuild_cache.dir
+G:/creation/godot-cpp-template/out/build/x64-Debug/godot-cpp/CMakeFiles/generate_bindings.dir
+G:/creation/godot-cpp-template/out/build/x64-Debug/godot-cpp/CMakeFiles/godot-cpp.dir
+G:/creation/godot-cpp-template/out/build/x64-Debug/godot-cpp/CMakeFiles/edit_cache.dir
+G:/creation/godot-cpp-template/out/build/x64-Debug/godot-cpp/CMakeFiles/rebuild_cache.dir
