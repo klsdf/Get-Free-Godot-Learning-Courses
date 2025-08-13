@@ -14,5 +14,5 @@ void ExampleClass::print_type(const Variant &p_variant) const {
 
 
 void ExampleClass::print_error(const String &p_message) const {
-	print_line(vformat("Custom Error: %s", p_message));
+	print_line(vformat("Yan Custom Error: %s", p_message));
 }
