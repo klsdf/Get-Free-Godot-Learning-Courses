@@ -27,6 +27,9 @@ void (*YanClass::original_print_script_error)(const char*, const char*, const ch
 // 构造函数
 YanClass::YanClass() {
 	// 构造函数中不需要特殊处理
+	var script =  GDScript.new();
+
+
 }
 
 // 析构函数

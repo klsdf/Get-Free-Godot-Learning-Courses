@@ -39,6 +39,7 @@ inline void print_error(const Variant &p_variant) {
 }
 
 inline void print_line(const Variant &p_variant) {
+	UtilityFunctions::print("i am milk dragon");
 	UtilityFunctions::print(p_variant);
 }
 
@@ -48,6 +49,7 @@ inline void print_line_rich(const Variant &p_variant) {
 
 template <typename... Args>
 void print_error(const Variant &p_variant, Args... p_args) {
+	UtilityFunctions::print("\n\n\nwoc error!!!!!\n\n\n");
 	UtilityFunctions::printerr(p_variant, p_args...);
 }
 
