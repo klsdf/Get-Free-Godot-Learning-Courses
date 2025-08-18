@@ -10,7 +10,8 @@ config_version=5
 
 [application]
 
-config/name="godot cpp template"
+config/name="Get Free Godot Learning Materials"
+config/version="0.0.1"
 run/main_scene="uid://oklux1mqkis0"
 config/features=PackedStringArray("4.4", "Forward Plus")
 config/icon="res://icon.svg"

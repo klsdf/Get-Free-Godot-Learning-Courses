@@ -1,0 +1,41 @@
+[gd_scene load_steps=8 format=3 uid="uid://oklux1mqkis0"]
+
+[ext_resource type="PackedScene" uid="uid://c51buyjfd5r8e" path="res://YanGameFrameWork_Godot/CodeEdit/Example/CodeEditExample.tscn" id="1_idj7w"]
+[ext_resource type="PackedScene" uid="uid://dr8u4vyki2yvb" path="res://Scenes/StartScene.tscn" id="1_kln2b"]
+[ext_resource type="Script" uid="uid://jwgrkh7pdwva" path="res://Scripts/Controllers/GameController.gd" id="1_pbw6q"]
+[ext_resource type="PackedScene" uid="uid://daqxduwvmj8ge" path="res://Scenes/对话系统.tscn" id="2_kln2b"]
+[ext_resource type="Script" uid="uid://b2sub52xgnwh1" path="res://Scripts/Controllers/YanSceneController.gd" id="2_pbw6q"]
+[ext_resource type="PackedScene" uid="uid://dfo25rjdhav6t" path="res://Scenes/开场剧情显示.tscn" id="6_v1gob"]
+[ext_resource type="AudioStream" uid="uid://b1e4heh1817dw" path="res://Aduios/ユージ・ナイトー - RUNRUN! GOGO!.mp3" id="7_jw32o"]
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_pbw6q")
+
+[node name="SceneController" type="Node" parent="."]
+script = ExtResource("2_pbw6q")
+
+[node name="SceneDialog" parent="SceneController" instance=ExtResource("2_kln2b")]
+
+[node name="SceneGame" type="Control" parent="SceneController"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="CodeTest" parent="SceneController/SceneGame" instance=ExtResource("1_idj7w")]
+visible = false
+layout_mode = 1
+offset_left = 0.0
+
+[node name="SceneMainMenu" parent="SceneController" instance=ExtResource("1_kln2b")]
+visible = false
+
+[node name="SceneOpening" parent="SceneController" instance=ExtResource("6_v1gob")]
+visible = false
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("7_jw32o")
+autoplay = true
+bus = &"BGM"

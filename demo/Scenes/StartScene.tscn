@@ -1,0 +1,53 @@
+[gd_scene load_steps=2 format=3 uid="uid://dr8u4vyki2yvb"]
+
+[ext_resource type="Script" uid="uid://d3iisir3cgb4g" path="res://Scripts/UI/StartScene.gd" id="1_dgtb2"]
+
+[node name="StartScene" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_dgtb2")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 95.0
+offset_top = 67.0
+offset_right = 1082.0
+offset_bottom = 219.0
+theme_override_font_sizes/font_size = 90
+text = "免费领取Godot学习资料"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="CenterContainer" type="CenterContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 225.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer"]
+custom_minimum_size = Vector2(355, 0)
+layout_mode = 2
+theme_override_constants/separation = 60
+alignment = 1
+
+[node name="ButtonStart" type="Button" parent="CenterContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 80)
+layout_mode = 2
+text = "开始游戏"
+
+[node name="ButtonSetting" type="Button" parent="CenterContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 80)
+layout_mode = 2
+text = "设置"
+
+[node name="ButtonExit" type="Button" parent="CenterContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 80)
+layout_mode = 2
+text = "退出游戏"

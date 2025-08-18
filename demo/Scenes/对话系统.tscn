@@ -1,0 +1,67 @@
+[gd_scene load_steps=5 format=3 uid="uid://daqxduwvmj8ge"]
+
+[ext_resource type="Script" uid="uid://bxwcst2uh7c3d" path="res://Scripts/DialogSystem/DialogSystem.gd" id="1_lnvly"]
+[ext_resource type="Texture2D" uid="uid://dudnopsc7e7r6" path="res://YanGameFrameWork_Godot/Sprites/萤雪-微笑.png" id="1_ppm3d"]
+[ext_resource type="Texture2D" uid="uid://dfp34s8eiy35o" path="res://底板.png" id="3_e8smu"]
+[ext_resource type="Script" uid="uid://b8oqaynfhlfg" path="res://Scripts/DialogSystem/Typewriter.gd" id="4_4053a"]
+
+[node name="对话系统" type="Control" node_paths=PackedStringArray("dialog_label", "tachie", "button_next", "typewriter")]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_lnvly")
+dialog_label = NodePath("TextureRect/对话框")
+tachie = NodePath("立绘")
+button_next = NodePath("TextureRect/ButtonNext")
+typewriter = NodePath("Node")
+
+[node name="立绘" type="TextureRect" parent="."]
+custom_minimum_size = Vector2(198.305, 234.365)
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -433.0
+offset_right = 465.0
+grow_vertical = 0
+texture = ExtResource("1_ppm3d")
+expand_mode = 2
+stretch_mode = 4
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("3_e8smu")
+expand_mode = 1
+
+[node name="对话框" type="Label" parent="TextureRect"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -284.0
+offset_top = -157.0
+offset_right = 284.0
+grow_horizontal = 2
+grow_vertical = 0
+text = "你的代码看上去运行良好"
+
+[node name="ButtonNext" type="Button" parent="TextureRect"]
+layout_mode = 0
+offset_left = 901.0
+offset_top = 568.0
+offset_right = 1035.0
+offset_bottom = 623.0
+text = "下一句"
+
+[node name="Node" type="Node" parent="."]
+script = ExtResource("4_4053a")

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://b1e4heh1817dw"
+path="res://.godot/imported/ユージ・ナイトー - RUNRUN! GOGO!.mp3-3525a996bb477b8a26d5f003537e60b7.mp3str"
+
+[deps]
+
+source_file="res://Aduios/ユージ・ナイトー - RUNRUN! GOGO!.mp3"
+dest_files=["res://.godot/imported/ユージ・ナイトー - RUNRUN! GOGO!.mp3-3525a996bb477b8a26d5f003537e60b7.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
